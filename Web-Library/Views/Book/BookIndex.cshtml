@@ -1,0 +1,65 @@
+﻿@model IEnumerable<BookDTO>
+@{
+    ViewData["Titel"] = "BookIndex";
+}
+
+<h1>BookIndex</h1>
+<p>
+    <a asp-action="BookCreate" class="btn btn-outline-primary"><i class="fa fa-plus"></i> Create New Book</a>
+</p>
+
+<table class="table">
+    <thead>
+        <tr>
+            <th> 
+                 @Html.DisplayNameFor(model => model.ID)
+            </th>
+            <th>
+                @Html.DisplayNameFor(model => model.BookName)
+            </th>
+            <th>
+                @Html.DisplayNameFor(model => model.AuthorFirstname)
+            </th>
+            <th>
+                @Html.DisplayNameFor(model => model.AuthorLastname)
+            </th>
+            <th>
+                @Html.DisplayNameFor(model => model.BookGenre)
+            </th>
+            <th>
+                @Html.DisplayNameFor(model => model.YearOfPublication)
+            </th>
+            <th>
+                @Html.DisplayNameFor(model => model.AvailableForLoan)
+            </th>
+        </tr>
+    </thead>
+    <tbody>
+        @foreach (var item in Model)
+        {
+            <tr>
+                <td>@Html.DisplayFor(modelItem => item.ID)</td>
+
+                <td>@Html.DisplayFor(modelItem => item.BookName)</td>
+
+                <td>@Html.DisplayFor(modelItem => item.AuthorFirstname)</td>
+
+                <td>@Html.DisplayFor(modelItem => item.AuthorLastname)</td>
+
+                <td>@Html.DisplayFor(modelItem => item.BookGenre)</td>
+
+                <td>@Html.DisplayFor(modelItem => item.YearOfPublication)</td>
+
+                <td>@Html.DisplayFor(modelItem => item.AvailableForLoan)</td>
+
+                <td>
+                    <a asp-action="Details" class="btn btn-success" asp-route-id="@item.ID">Details  <i class="fa fa-edit"></i></a>
+                    <a asp-action="UpdateBook" class="btn btn-warning" asp-route-bookid="@item.ID">Edit  <i class="fa fa-edit"></i></a>
+                    <a asp-action="DeleteBook" class="btn btn-danger" asp-route-bookid="@item.ID">Delete  <i class="fa fa-trash"></i></a>
+                </td>
+            </tr>
+        }
+    </tbody>
+</table>
+
+

@@ -1,0 +1,60 @@
+﻿@model BookDTO
+
+@{
+    ViewData["Titel"] = "BookCreate";
+}
+
+<h1>Create New Book</h1>
+
+
+<hr />
+<div class="row">
+    <div class=" col-md-4">
+        <form asp-action="BookCreate">
+            <div asp-validation-summary="ModelOnly" class="text-danger"></div>
+
+            <div class="form-group">
+                <label asp-for="BookName" class="control-label"></label>
+                <input asp-for="BookName" class="form-control" />
+                <span asp-validation-for="BookName" class="text-danger"></span>
+            </div>
+
+            <div class="form-group">
+                <label asp-for="AuthorFirstname" class="control-label"></label>
+                <input asp-for="AuthorFirstname" class="form-control" />
+            </div>
+
+            <div class="form-group">
+                <label asp-for="AuthorLastname" class="control-label"></label>
+                <input asp-for="AuthorLastname" class="form-control" />
+            </div>
+
+            <div class="form-group">
+                <label asp-for="BookGenre" class="control-label"></label>
+                <input asp-for="BookGenre" class="form-control" />
+            </div>
+
+            <div class="form-group">
+                <label asp-for="YearOfPublication" class="control-label"></label>
+                <input asp-for="YearOfPublication" class="form-control" />
+            </div>
+
+            <div class=" form-group form-check">
+               <label class="form-check-label">
+                   <input class="form-check-input" asp-for="AvailableForLoan"/>@Html.DisplayNameFor(model => model.AvailableForLoan)
+               </label>
+            </div>
+
+            <div class="form-group">
+                <input type="submit" value="Create" class="btn btn-primary" />
+            </div>
+        </form>
+    </div>
+</div>
+
+<div>
+    <a asp-action="BookIndex">Back to list</a>
+</div>
+
+
+

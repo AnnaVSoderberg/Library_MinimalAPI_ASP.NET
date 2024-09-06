@@ -1,0 +1,62 @@
+﻿@model BookDTO
+
+@{
+    ViewData["Title"] = "Details";
+}
+
+<h1>Details</h1>
+<hr />
+<div>
+
+    <dl class="row">
+        <dt class="vol-sm-2">
+            @Html.DisplayNameFor(model => model.ID)
+        </dt>
+        <dd class="vol-sm-10">
+            @Html.DisplayFor(model => model.ID)
+        </dd>
+
+        <dt class="vol-sm-2">
+            @Html.DisplayNameFor(model => model.BookName)
+        </dt>
+        <dd class="vol-sm-10">
+            @Html.DisplayFor(model => model.BookName)
+        </dd>
+
+        <dt class="vol-sm-2">
+            @Html.DisplayNameFor(model => model.AuthorFirstname)
+        </dt>
+        <dd class="vol-sm-10">
+            @Html.DisplayFor(model => model.AuthorFirstname)
+        </dd>
+
+        <dt class="vol-sm-2">
+            @Html.DisplayNameFor(model => model.AuthorLastname)
+        </dt>
+        <dd class="vol-sm-10">
+            @Html.DisplayFor(model => model.AuthorLastname)
+        </dd>
+
+        <dt class="vol-sm-2">
+            @Html.DisplayNameFor(model => model.BookGenre)
+        </dt>
+        <dd class="vol-sm-10">
+            @Html.DisplayFor(model => model.BookGenre)
+        </dd>
+
+        <dt class="vol-sm-2">
+            @Html.DisplayNameFor(model => model.YearOfPublication)
+        </dt>
+        <dd class="vol-sm-10">
+            @Html.DisplayFor(model => model.YearOfPublication)
+        </dd>
+
+        <dt class="vol-sm-2">
+            @Html.DisplayNameFor(model => model.AvailableForLoan)
+        </dt>
+        <dd class="vol-sm-10">
+            @Html.DisplayFor(model => model.AvailableForLoan)
+        </dd>
+    </dl>
+</div>
+

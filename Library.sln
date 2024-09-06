@@ -1,0 +1,31 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio Version 17
+VisualStudioVersion = 17.9.34723.18
+MinimumVisualStudioVersion = 10.0.40219.1
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "LibraryBookAPI", "LibraryAPI\LibraryBookAPI.csproj", "{851933E5-EB07-4953-9E7D-074DEB5CC299}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Web-Library", "Web-Library\Web-Library.csproj", "{39A73126-521E-45B2-8A5E-34FE086E8B85}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Release|Any CPU = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{851933E5-EB07-4953-9E7D-074DEB5CC299}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{851933E5-EB07-4953-9E7D-074DEB5CC299}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{851933E5-EB07-4953-9E7D-074DEB5CC299}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{851933E5-EB07-4953-9E7D-074DEB5CC299}.Release|Any CPU.Build.0 = Release|Any CPU
+		{39A73126-521E-45B2-8A5E-34FE086E8B85}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{39A73126-521E-45B2-8A5E-34FE086E8B85}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{39A73126-521E-45B2-8A5E-34FE086E8B85}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{39A73126-521E-45B2-8A5E-34FE086E8B85}.Release|Any CPU.Build.0 = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+	GlobalSection(ExtensibilityGlobals) = postSolution
+		SolutionGuid = {C359D183-C155-4F07-9239-57EBE1359072}
+	EndGlobalSection
+EndGlobal
